@@ -390,7 +390,6 @@ h2 {
 
 
 
-
 .inputTable {
   width:90%;
   margin-left: auto;
@@ -3333,12 +3332,14 @@ textarea.form-control {
 .my-page-settings-form{
     align-items: center;
 }
-.my-page-settings-form table{
+.my-page-settings-form table,
+.my-page-settings table{
     margin-top: 2em;
     width: 80%;
     border-spacing: 1em 0em;
 }
-.my-page-settings-form table td input[type="checkbox"]{
+.my-page-settings-form table td input[type="checkbox"],
+.my-page-settings table td input[type="checkbox"]{
     margin-right: 1em;
     cursor: pointer;
 }

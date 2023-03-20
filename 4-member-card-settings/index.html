@@ -66,7 +66,7 @@
         let imageUrl;
         const theme = $('input[name="member_card"]:checked').val();
         $('.member-card-section div').removeClass();
-        $('.member-card-section div').addClass(`member-card-custom member-card-custom-${theme}`);
+        $('.member-card-section div').addClass(`member-card-custom-${theme}`);
         if (theme == "light"){
             imageUrl = `images/light-blue.jpeg`
         } else {

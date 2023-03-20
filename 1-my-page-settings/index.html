@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Zubarus | Organization</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="zubonline.css">
+</head>
+<body>
+  <div class="horizontalMenu2">
+    <ul>
+      <li>Member</li>
+      <li>Payments</li>
+      <li>Reports</li>
+      <li>Arrangements</li>
+      <li>Settings</li>
+    </ul>
+  </div>
+
+  <div class="my-page-settings">
+    <div class="my-page-settings-info-container">
+      <p>You have successfully logged in.</p>
+      <a href="#">Logout</a>
+    </div>
+    <h1>My Page Settings</h1>
+    <form id="myPageSettingsForm" name="myPageSettingsForm" method="get" action="#" class="my-page-settings-form flex-column">
+      <h2>Parameters</h2>
+      <table class="niceTableNew">
+        <tbody>
+          <tr>
+            <td>Will the Member Card button be displayed?</td>
+            <td>
+              <input type="checkbox" name="mypage_show_membercard" id="mypage_show_membercard" value="1" checked></td></tr><tr>
+            <td>Will the Show Documents button be displayed?</td>
+            <td>
+              <input type="checkbox" name="mypage_show_documents" id="mypage_show_documents" value="2"></td></tr><tr>
+            <td>Will the Videos button be displayed?</td>
+            <td>
+              <input type="checkbox" name="mypage_show_videos" id="mypage_show_videos" value="3"></td></tr><tr>
+            <td>Disable department update</td>
+            <td>
+              <input type="checkbox" name="mypage_disable_department_update" id="mypage_disable_department_update" value="4">
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+        <div class="my-page-settings-buttons">
+          <input type="submit" class="submitButton" value="Update">
+          <input type="button" class="goButton" value="Cancel">
+        </div>
+    </form>
+  </div>
+
+  <div class = 'footer'>
+    <p>© 2011-2023 Zubarus AS. All Rights Reserved.
+    <br>
+    <a href="mailto:support@zubarus.com">support@zubarus.com</a>
+    </p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Zubarus | Organization</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="zubonline.css">
+</head>
+<body>
+  <div class="horizontalMenu2">
+    <ul>
+      <li>Member</li>
+      <li>Payments</li>
+      <li>Reports</li>
+      <li>Arrangements</li>
+      <li>Settings</li>
+    </ul>
+  </div>
+
+  <div class="my-page-settings member-card">
+    <h1>Member Card Settings</h1>
+    <form id="userSettingsForm" name="userSettingsForm" method="get" action="#" class="my-page-settings-form flex-column">
+      <h2>Parameters</h2>
+      <table class="niceTableNew">
+        <tbody>
+          <tr>
+            <td>Background image : </td>
+            <td><input type="file" id="background-image" name="filename"></td>
+          </tr>
+          <tr>
+            <td>Theme :</td>
+            <td>
+            <input type="radio" name="member_card" id="light_theme" value="light">
+            <label for="light_theme">Light</label><br>
+            <input type="radio" name="member_card" id="dark_theme" value="dark" checked>
+            <label for="dark_theme">Dark</label><br>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+        <div class="my-page-settings-buttons">
+          <input type="submit" class="submitButton" id="update-button" value="Update">
+        </div>
+    </form>
+  </div>
+
+  <div class="my-page-settings member-card-section flex-column" >
+    <div class="member-card-custom">
+        <h2>Member Card</h2>
+    </div>
+  </div>
+
+  <div class = 'footer'>
+    <p>© 2011-2023 Zubarus AS. All Rights Reserved.
+    <br>
+    <a href="mailto:support@zubarus.com">support@zubarus.com</a>
+    </p>
+  </div>
+
+  <!-- Jquery for dynamic functions -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script type="text/javascript">
+
+    jQuery(document).ready(function() {
+      $('#update-button').on('click', function(e) {
+        e.preventDefault();
+        let imageUrl;
+        const theme = $('input[name="member_card"]:checked').val();
+        $('.member-card-section div').removeClass();
+        $('.member-card-section div').addClass(`member-card-custom member-card-custom-${theme}`);
+        if (theme == "light"){
+            imageUrl = `images/light-blue.jpeg`
+        } else {
+            imageUrl = `images/dark-blue.jpeg`
+        }
+        $(".member-card-section div").css("background-image", "url(" + imageUrl + ")");
+      });
+    });
+
+  </script>
+</body>
+</html>

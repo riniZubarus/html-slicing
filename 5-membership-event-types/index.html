@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Zubarus | Organization</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="zubonline.css">
+</head>
+<body>
+  <div class="horizontalMenu2">
+    <ul>
+      <li>Member</li>
+      <li>Payments</li>
+      <li>Reports</li>
+      <li>Arrangements</li>
+      <li>Settings</li>
+    </ul>
+  </div>
+
+  <div class="my-page-settings">
+    <h1>Memberships and Events Settings</h1>
+    <form id="eventSettingsForm" name="eventSettingsForm" method="post" action="#" class="my-page-settings-form flex-column">
+      <h2>Parameters</h2>
+      <table class="niceTableNew">
+        <tbody>
+          <tr>
+            <td>Membership Types : </td>
+            <td>
+              <input type="checkbox" name="membership_details" id="membership_type_1" value="Type 1" checked>
+              <label for="membership_type_1">Type 1</label><br>
+              <input type="checkbox" name="membership_details" id="membership_type_2" value="Type 2">
+              <label for="membership_type_2">Type 2</label><br>
+              <input type="checkbox" name="membership_details" id="membership_type_3" value="Type 3">
+              <label for="membership_type_3">Type 3</label><br>
+              <input type="checkbox" name="membership_details" id="membership_type_4" value="Type 4">
+              <label for="membership_type_4">Type 4</label><br>
+            </td>
+          </tr>
+          <tr>
+            <td>General ledger account for membership :</td>
+            <td>
+              <textarea id="title_1" name="title_1" rows="1" cols="50"></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td>Event Categories : </td>
+            <td>
+              <input type="checkbox" name="event_details" id="event_category_1" value="Category 1" checked>
+              <label for="event_category_1">Category 1</label><br>
+              <input type="checkbox" name="event_details" id="event_category_2" value="Category 2">
+              <label for="event_category_2">Category 2</label><br>
+              <input type="checkbox" name="event_details" id="event_category_3" value="Category 3">
+              <label for="event_category_3">Category 3</label><br>
+              <input type="checkbox" name="event_details" id="event_category_4" value="Category 4">
+              <label for="event_category_4">Category 4</label><br>
+              <input type="checkbox" name="event_details" id="event_category_5" value="Category 4">
+              <label for="event_category_5">Category 5</label><br>
+              <input type="checkbox" name="event_details" id="event_category_6" value="Category 4">
+              <label for="event_category_6">Category 6</label><br>
+            </td>
+          </tr>
+          <tr>
+            <td>General ledger account for event :</td>
+            <td>
+              <textarea id="title_2" name="title_2" rows="1" cols="50"></textarea>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+        <div class="my-page-settings-buttons">
+          <input type="submit" class="submitButton" id="update-button" value="Update">
+        </div>
+    </form>
+  </div>
+
+  <div class = 'footer'>
+    <p>© 2011-2023 Zubarus AS. All Rights Reserved.
+    <br>
+    <a href="mailto:support@zubarus.com">support@zubarus.com</a>
+    </p>
+  </div>
+</body>
+</html>

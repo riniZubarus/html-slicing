@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Zubarus | Organization</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="zubonline.css">
+</head>
+<body>
+  <div class="horizontalMenu2">
+    <ul>
+      <li>Member</li>
+      <li>Payments</li>
+      <li>Reports</li>
+      <li>Arrangements</li>
+      <li>Settings</li>
+    </ul>
+  </div>
+
+  <div class="my-page-settings">
+    <h1>User Settings</h1>
+    <form id="userSettingsForm" name="userSettingsForm" method="get" action="#" class="my-page-settings-form flex-column">
+      <h2>Parameters</h2>
+      <table class="niceTableNew">
+        <tbody>
+          <tr>
+            <td>Details that needs to be shown on Member search : </td>
+            <td>
+              <input type="checkbox" name="member_number" id="member_number" value="1" checked>
+              <label for="member_number">Member Number</label><br>
+              <input type="checkbox" name="member_name" id="member_name" value="2" checked>
+              <label for="member_name">Member Name</label><br>
+              <input type="checkbox" name="member_address" id="member_address" value="3">
+              <label for="member_address">Member Address</label><br>
+              <input type="checkbox" name="membership_type" id="membership_type" value="4">
+              <label for="membership_type">Membership Type</label><br>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+        <div class="my-page-settings-buttons">
+          <input type="submit" class="submitButton" value="Update">
+        </div>
+    </form>
+  </div>
+
+  <div class = 'footer'>
+    <p>© 2011-2023 Zubarus AS. All Rights Reserved.
+    <br>
+    <a href="mailto:support@zubarus.com">support@zubarus.com</a>
+    </p>
+  </div>
+</body>
+</html>
